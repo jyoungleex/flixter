@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100);
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+.frosty {
+  background:rgba(0,0,0, 0.5);
+  color: white;
+}
+
+.frosty h1 {
+  font-family:'Lato', 'Helvetica Neue', Helvetica;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0, 0.5) 1px 1px;
+}
+
+.frosty h2 {
+  font-family:'Lato', 'Helvetica Neue', Helvetica;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0, 0.5) 1px 1px;
+}
+
+.navbar {
+  border-radius:0;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #991F39;
+  background:url('symphony.png');
+}
+
+.navbar-default a.navbar-brand {
+  font-family:'mathleteskinny';
+  font-size: 42pt;
+  color: #991F39;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.btn {
+  border-radius:0;
+}
