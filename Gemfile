@@ -9,8 +9,14 @@ gem 'rails', '4.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+# Bring in twitter bootstrap for styling
+gem 'bootstrap-sass', '~> 3.3.4.1'
+
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
+
+# For use with bootstrap, using this particular version because we have to use an older bootstrap vers.
+gem 'sprockets', '<= 2.11.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
