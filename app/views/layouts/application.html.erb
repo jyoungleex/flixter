@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="wrap">
 <header>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -28,14 +28,39 @@
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <%if user_signed_in?%>
+        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+        <% else %>
+        <li><%= link_to 'Sign Up', new_user_registration_path%></li>
+        <li><%= link_to 'Sign In', new_user_session_path%></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 </header>
 
+<% if notice.present? %>
+<p class="alert alert-info"><%= notice %></p>
+<% end %>
+
+<% if alert.present? %>
+<p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
 <%= yield %>
+
+</div>
+
+<br class="clear">
+<div id="footer">
+    <div class="container">
+      <b>Teachers</b>
+      <br />
+      <%= link_to 'Teach a Course', new_instructor_course_path %><br />
+      <%= link_to 'Link', '#' %>
+    </div>
+  </div>
 
 </body>
 </html>

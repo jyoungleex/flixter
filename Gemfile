@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# Simpleform 
+gem 'simple_form'
+
+# Using Devise for user authentification and security. Using an newer version for heroku compatibility.
+gem 'devise', '>= 3.2.4' 
+
 # Installing 12factor gem
 gem 'rails_12factor', group: :production
 
