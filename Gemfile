@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+#Figaro for security
+gem 'figaro'
+
+gem 'fog'
+
+#Carrierwave for video uploading
+gem 'carrierwave'
+
 # Simpleform 
 gem 'simple_form'
 
