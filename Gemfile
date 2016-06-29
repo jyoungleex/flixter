@@ -5,6 +5,8 @@ gem 'figaro'
 
 gem 'fog'
 
+gem 'mini_magick', '~> 4.3.1'
+
 #Carrierwave for video uploading
 gem 'carrierwave'
 
