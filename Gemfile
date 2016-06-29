@@ -7,6 +7,9 @@ gem 'fog'
 
 gem 'mini_magick', '~> 4.3.1'
 
+#Adding this in place of fog, because of the large file sizes we're using.
+gem 'carrierwave-aws'
+
 #Carrierwave for video uploading
 gem 'carrierwave'
 
