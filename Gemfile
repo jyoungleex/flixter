@@ -13,6 +13,8 @@ gem 'carrierwave-aws'
 #Carrierwave for video uploading
 gem 'carrierwave'
 
+gem 'stripe'
+
 # Simpleform 
 gem 'simple_form'
 
