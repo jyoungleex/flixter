@@ -62,13 +62,51 @@
 
 <br class="clear">
 <div id="footer">
-    <div class="container">
-      <b>Teachers</b>
+  <div class="container">
+    <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %><br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+    </div>
+
+    <div class="col-xs-12 col-sm-3">
+      <b>About</b>
       <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %><br />
-      <%= link_to 'Link', '#' %>
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', '#' %>
+    </div>
+
+    <div class="col-xs-12 col-sm-3">    
+      <b>Contact</b>
+      <br />
+      nospambots@gmail.com
+      <br />
+      1234 Rainbow Road
+      <br />
+      Arlington, VA 01004
+    </div>
+
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Social</b>
+      <br />
+      <%= link_to 'https://github.com/jyoungleex' do %>
+      <%= image_tag 'gh.png', class: 'social-button' %>
+      <% end %>
+
+      <%= link_to 'https://www.facebook.com/jessica.lee.75436' do %>
+      <%= image_tag 'fb.png',  class: 'social-button' %>
+      <% end %>
+
+      <%= link_to 'https://twitter.com/' do %>
+      <%= image_tag 'twitter.png',  class: 'social-button' %>
+      <% end %>
     </div>
   </div>
+</div>
 
 </body>
 </html>
