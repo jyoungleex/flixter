@@ -41,8 +41,6 @@ $(function() {
   <%= image_tag current_course.image, class: 'img-responsive' %>
   <h1 class = "text-center"><%= current_course.title %></h1>
   <br />
-  <%= link_to 'Preview as student...', course_path(current_course), class: 'btn btn-warning pull-right' %>
-  <br class="clear" />
 
   <div class="text-center">
     <!-- Button trigger modal -->
@@ -51,6 +49,8 @@ $(function() {
     </button>
   </div>
 
+  <%= link_to 'Preview as student...', course_path(current_course), class: 'btn btn-warning pull-right btn-sm' %>
+  <br class="clear" />
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
       <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">

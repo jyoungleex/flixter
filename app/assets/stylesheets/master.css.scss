@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100);
 
+
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
 }
 
 body {
   background:url('pixel_weave.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: Lato, Calibri, "Helvetica Neue", Helvetica, Frutiger, "Frutiger Linotype", Univers, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, Arial, sans-serif;
+}
+
+body a {
+  color: crimson;
 }
 
 .booyah-box {
@@ -17,6 +22,10 @@ body {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 15px;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 .booyah-box h2, .booyah-box h1 {
@@ -30,7 +39,8 @@ body {
 
 .frosty h1 {
   font-family:'Lato', 'Helvetica Neue', Helvetica;
-  font-weight: 100;
+  font-weight: 700;
+  text-transform: uppercase;
   text-shadow: rgba(0,0,0, 0.5) 1px 1px;
 }
 
@@ -120,4 +130,35 @@ ul .header .glyphicon {
 
 .img-responsive {
   margin:auto;
+}
+
+.btn {
+  border-radius:15px;
+  text-transform:uppercase;
+  font-family: "Helvetica Neue", Calibri, Helvetica;
+}
+
+.btn-primary {
+  background: none;
+  border: 2px solid #0099cc;
+  color: #0099cc;
+}
+
+.btn-success {
+  background: none;
+  border: 3px solid #2dbf64;
+  color: #eeeeee;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.btn-warning {
+  background: #252525;
+  border: 2px solid #e8910d;
+  color: #e8910d;
+}
+
+.resource-logo {
+  width: 100px;
+  margin:10px;
 }

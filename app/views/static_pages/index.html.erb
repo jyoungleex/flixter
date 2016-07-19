@@ -1,9 +1,9 @@
 <div class="hero">
-<br />
+<br /><br />
 <div class="frosty col-xs-10 col-xs-offset-1 text-center">
 <br />
 <h1>Learn Magic from the Pros</h1>
-<br />
+<br/>
 <h2>I'm an illusionist, Michael.</h2>
 <br />
 <%= link_to 'Learn More', courses_path, class: 'btn btn-success' %>
@@ -15,13 +15,19 @@
 <div class="col-xs-10 col-xs-offset-1 features text-center">
   <div class="col-sm-4">
     <h3>Feature 1</h3>
+    <%= image_tag 'twitter.png',  class: 'resource-logo' %>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque elementum aliquet. </p>
   </div>
 
   <div class="col-sm-4">
     <h3>Feature 2</h3>
+    <%= image_tag 'gh.png',  class: 'resource-logo' %>
+    <p>Nulla semper bibendum commodo. Donec ut magna quis libero scelerisque semper sit amet id mauris.</p>
   </div>
 
   <div class="col-sm-4">
     <h3>Feature 3</h3>
+    <%= image_tag 'fb.png',  class: 'resource-logo' %>
+    <p>Etiam pretium dictum justo, a tincidunt orci hendrerit at. Aenean feugiat risus et magna blandit dapibus. </p>
   </div>
 </div>
