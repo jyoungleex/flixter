@@ -9,6 +9,8 @@ gem 'mini_magick', '~> 4.3.1'
 
 gem 'ranked-model'
 
+gem 'jquery-ui-rails'
+
 #Adding this in place of fog, because of the large file sizes we're using.
 gem 'carrierwave-aws'
 
